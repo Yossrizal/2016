@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Menangani Kejadian 1</title>
+	<script type="text/javascript">
+	function tampil(){
+		alert("Ini adalah contoh penggunaan onload");
+	}
+
+	function tampilkan(){
+		alert("Selamat datang saudara " + document.form1.nama.value +
+			" dari jurusan " + document.form1.jurusan.value);
+	}
+	</script>
+</head>
+<body onLoad="tampil()">
+	<form name="form1">
+		<pre>
+			Nama : <input type="text" name="nama" size="20">
+			Jurusan : <input type="text" name="jurusan" size="20">
+		</pre>
+		<input type="button" value="Submit" onClick="tampilkan()">
+		<input type="reset" value="reset">
+	</form>
+</body>
+</html>

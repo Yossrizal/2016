@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test this for.in</title>
+</head>
+<script type="text/javascript">
+	function Mahasiswa(Nama,Alamat,Jurusan){
+		this.Nama=Nama;
+		this.Alamat=Alamat;
+		this.Jurusan=Jurusan;
+	}
+
+	function Tulis(objek){
+		for (var x in objek)
+			document.writeln(objek[x]);
+		document.writeln(" ");
+	}
+
+</script>
+<body>
+	<p>
+		<script type="text/javascript">
+		document.writeln("<h1> Membuat Objek</h1>");
+		document.writeln("<pre>");
+		//Menciptakan instan objek mahasiswa
+		var Yaze = new Mahasiswa("Yaze Koutaro","Japan","Information System");
+		var Alex = new Mahasiswa("Alex Rou","Canada","Information Management");
+		var Siren = new Mahasiswa("Siren Huiz","France","Information Technique");
+
+		Tulis(Yaze);
+		Tulis(Alex);
+		Tulis(Siren);
+		document.writeln("</pre>");
+		</script>
+	</p>
+</body>
+</html>

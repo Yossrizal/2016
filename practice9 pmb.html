@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pendaftaran Calon Mahasiswa Baru</title>
+</head>
+<body>
+<form name="form1">
+<h1>Formulir Pendaftaran Calon Mahasiswa Baru</h1><hr>
+Nama	: <input type="text" name="nama"><br />
+Alamat	: <input type="text" name="alamat"><br />
+Asal Sekolah	: <select name="sekolah" size="1">
+	<option value="SMA">SMA</option>
+	<option value="SMK">SMK</option>
+</select><br />
+Jurusan dipilih	: 	<input type="checkbox" name="ti"> Teknik Informatika
+					<input type="checkbox" name="mi"> Manajemen Informatika<br />
+Jenjang			: 	<input type="radio" name="diploma"> Diploma
+					<input type="radio" name="sarjana"> Sarjana<br /><br />
+<input type="button" value="kirim" onClick="daftar()"><input type="reset" value="reset"><hr />
+
+Nama : <input type="text" name="nama2" size="30"><br />
+Alamat : <input type="text" name="alamat2" size="30"><br />
+Asal Sekolah : <input type="text" name="sekolah2" size="30"><br />
+Jurusan : <input type="text" name="jurusan2" size="30"><br />
+Jenjang : <input type="text" name="jenjang2" size="30"><br />
+</form>
+<script type="text/javascript">
+	function daftar(){
+		var nama2 = (document.form1.nama.value);
+		var alamat2 = (document.form1.alamat.value);
+		var sekolah2 = (document.form1.sekolah.value);
+		var jurusan2 = "";
+		if (form1.ti.checked == true)
+			jurusan2 = "Teknik Informatika";
+		else if  (form1.mi.checked == true)
+			jurusan2 = "Manajemen Informatika";
+		var jenjang2 = "";
+		if (form1.diploma.checked == true){
+			jenjang2 = "Diploma";
+		}
+		else if (form1.sarjana.checked == true){
+			jenjang2 = "Sarjana";
+		}
+		document.form1.nama2.value=nama2;
+		document.form1.alamat2.value=alamat2;
+		document.form1.sekolah2.value=sekolah2;
+		document.form1.jurusan2.value=jurusan2;
+		document.form1.jenjang2.value=jenjang2;
+	}
+
+
+</script>
+
+</body>
+</html>

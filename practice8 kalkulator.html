@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> KALKULATOR JS</title>
+</head>
+<body>
+<script type="text/javascript">
+	function tambah(){
+		var x = eval(document.form1.satu.value);
+		var y = eval(document.form1.dua.value);
+		var hasil = x + y;
+		
+		alert(hasil);
+	}
+
+	function kurang(){
+		var x = eval(document.form1.satu.value);
+		var y = eval(document.form1.dua.value);
+		var hasil = x - y;
+		
+		alert(hasil);
+	}
+
+	function kali(){
+		var x = eval(document.form1.satu.value);
+		var y = eval(document.form1.dua.value);
+		var hasil = x * y;
+		
+		alert(hasil);
+	}
+
+	function bagi(){
+		var x = eval(document.form1.satu.value);
+		var y = eval(document.form1.dua.value);
+		var hasil = x / y;
+		
+		alert(hasil);
+	}
+</script>
+<center>
+<form name="form1"><pre>
+	<b>Membuat Kalkulator</b><hr>
+	Bilangan 1 	: <input type="text" name="satu" size="10"> <br>
+	Bilangan 2 	: <input type="text" name="dua" size="10">
+	<hr>
+	<input type="button" value="+" onClick="tambah()"> <input type="button" value="-" onClick="kurang()"> <input type="button" value="*" onClick="kali()"> <input type="button" value="/" onClick="bagi()"> <input type="reset" value="C">
+</pre>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function check_box(form){
+		var ket1 = "";
+		var ket2 = "";
+		if (form.satu.checked == true)
+			ket1 = "satu";
+		if (form.dua.checked == true)
+			ket2 = "dua";
+		alert("Anda memilih checkbox" + ket1+ "" +ket2);
+	}
+</script>
+<form>
+	<input type="checkbox" name="satu"> satu
+	<input type="checkbox" name="dua"> dua
+	<hr />
+	<input type="button" value="confirm" onClick="check_box(this.form)">
+	<input type="reset" value="reset">
+</form>
+
+</body>
+</html>

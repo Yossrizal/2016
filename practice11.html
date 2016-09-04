@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+	function akar(){
+		var a = (document.form1.bilA.value);
+		var b = (document.form1.bilB.value);
+		var c = (document.form1.bilC.value);
+		var det = Math.pow(b,2) - (4*a*c);
+		document.form1.determinan.value=det;
+		
+		if (det>0) {
+			var x1 = (-b + Math.sqrt(det)) / (2*a);
+			var x2 = (-b - Math.sqrt(det)) / (2*a);
+			document.form1.x1.value=x1;
+			document.form1.x2.value=x2;	
+		}
+
+		else if (det=0){
+			var x1 = (-b + Math.sqrt(det)) / (2*a);
+			var x2 = (-b - Math.sqrt(det)) / (2*a);
+			document.form1.x1.value=x1;
+			document.form1.x2.value=x2;
+		}
+
+		else {
+			document.form1.x1.value="-"
+			document.form1.x2.value="-"
+		}
+
+		
+	}
+
+
+	</script>
+</head>
+<body>
+	<form name="form1">
+		<h1>Mencari Akar Persamaan Kuadrat</h1><hr>
+		<pre>
+			Masukan a : <input type="text" name="bilA" size="20">
+			Masukan b : <input type="text" name="bilB" size="20">
+			Masukan c : <input type="text" name="bilC" size="20">
+			<input type="button" onclick="akar()" value="Submit">
+			<input type="reset" value="reset">
+			<hr />
+			Nilai Determinan : <input type="text" name="determinan" size="20">
+			Nilai X1 : <input type="text" name="x1" size="20">
+			Nilai X2 : <input type="text" name="x2" size="20">
+		</pre>
+	</form>
+
+</body>
+</html>

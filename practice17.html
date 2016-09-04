@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+<body>
+	<script type="text/javascript">
+		function Tulis(A,str){
+			document.writeln(str);
+			for(var i=0;i<A.length;i++)
+				document.writeln(A[i]);
+				document.writeln(" ");
+		}
+
+		document.writeln("<pre>");
+		var Mahasiswa = new Array("yaze","alex","sander");
+		Tulis(Mahasiswa,"Objek Sebelum Di urutkan");
+		Mahasiswa.sort();
+		Tulis(Mahasiswa,"Objek Setelah Di urutkan");
+		Mahasiswa.reverse();
+		Tulis(Mahasiswa,"Objek Setelah Di balik");
+		Tulis(Mahasiswa,"Objek Setelah Di Join " + Mahasiswa.join(','));
+		
+		var MahasiswaBaru=["Nince","Twelfe"];
+		Tulis(MahasiswaBaru,"Objek Mahasiswa Baru :");
+		var MahasiswaGabungan=Mahasiswa.concat(MahasiswaBaru);
+		Tulis(MahasiswaGabungan,"Objek Setelah Di Gabung");
+		MahasiswaGabungan=MahasiswaGabungan.slice(1,3);
+		Tulis(MahasiswaGabungan,"Setelah objek di slice(1,3): ");
+
+		document.writeln("</pre>");
+
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function Mahasiswa(Nama,Alamat,Jurusan){
+			this.Nama=Nama;
+			this.Alamat=Alamat;
+			this.Jurusan=Jurusan;
+			//deklarasi metode
+			this.Tulis=TulisObjek;
+			this.Ubah=UbahObjek;
+		}
+
+		function TulisObjek(){
+			document.writeln("Nama	: " +this.Nama);
+			document.writeln("Alamat	: " +this.Alamat);
+			document.writeln("Jurusan	: " +this.Jurusan);
+			document.writeln(" ");
+		}
+
+		function UbahObjek(Nama,Alamat,Jurusan){
+			this.Nama=Nama;
+			this.Alamat=Alamat;
+			this.Jurusan=Jurusan;
+		}
+
+		document.writeln("<h1> Membuat Objek </h1>");
+		document.writeln("<pre>");
+
+		//Menciptakan instan ojek mahasiswa
+		Mhs = new Mahasiswa("Routa","USA","Computer System");
+		Mhs.Tulis();
+
+		//Mengubah properti objek
+		Mhs.Ubah("Rui","Thailand","Computer Design");
+		Mhs.Tulis();
+		document.writeln("</pre>");
+	</script>
+
+</body>
+</html>

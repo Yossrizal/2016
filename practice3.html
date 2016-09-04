@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form name="form">
+	<script type="text/javascript">
+	function proses(){
+		var x = eval(document.form.satu.value);
+		var y = eval(document.form.dua.value);
+		var hasil = x + y;
+		alert(hasil);
+	}
+	</script>
+	<pre>
+		<form>
+		Penjumlahan <br />
+		bilangan 1	: <input type="text" size="10" name="satu">
+		bilangan 2 	: <input type="text" size="10" name="dua">
+
+	<input type="button" value="proses" onClick="proses()">
+	<input type="reset">
+	</form>
+	</pre>
+
+</body>
+</html>

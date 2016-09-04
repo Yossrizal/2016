@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		function RataRata(){
+			var Jumlah=0.0;
+			var variabel=RataRata.arguments.length;
+
+			for(var i=0;i<variabel;i++)
+				Jumlah += RataRata.arguments[i];
+				return Jumlah/variabel;
+			
+		}
+ 		
+		document.writeln("<pre>");
+		document.writeln("Rata Rata dari 12,32,45,54 adalah : " + RataRata(12,32,45,54,100));
+		document.writeln("Rata Rata dari 1,2,3 adalah : " + RataRata(1,2,3));
+		document.writeln("</pre>");
+
+		</script>
+	</body>
+</html>

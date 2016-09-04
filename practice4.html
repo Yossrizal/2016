@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	function radio_box(form){
+		var ket	;
+		if (form.pilih.checked == true)
+			ket = "Memilih Ya";
+		else
+			ket = "Tidak Memilih";
+		alert('Anda ' + ket);
+	}
+	</script>
+	Radio Object
+	<form>
+		<input type="radio" name="pilih"> Ya <hr>
+		<input type="button" value="konfirm" onClick="radio_box(this.form)">
+		<input type="reset" value="reset">
+	</form>
+
+</body>
+</html>

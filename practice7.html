@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function EvenTekan(){
+		var jurusanstr = (document.form1.jurusan.value);
+		document.form1.jurusanstr.value=jurusanstr;
+	}
+</script>
+<form name="form1">
+	Penggunaan Select<hr><pre>
+	Pilih Jurusan : <select name="jurusan" size="1">
+	<option value="Akutansi Perpajakan">Akutansi Perpajakan</option>
+	<option value="Manajemen Informatika">Manajemen Informatika</option>
+	<option value="Teknik Informatika">Teknik Informatika</option>
+	<option value="Public Relation">Public Relation</option>
+	<option value="Sistem Informasi">Sistem Informasi</option>
+	</select>
+	<input type="button" value="submit" onClick="EvenTekan()">
+	<input type="reset" value="reset">
+	<hr>
+	Jurusan : <input type="text" name="jurusanstr" size="30">
+	</pre>
+</form>
+
+</body>
+</html>

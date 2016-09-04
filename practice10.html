@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function tekan(){
+		var NamaAnda = (document.form1.Nama.value);
+		var JamKerja = parseInt(document.form1.JamKer.value);
+		var UpahPerJam = parseInt(document.form1.Upah.value);
+		var Total = JamKerja * UpahPerJam;
+		var Gaji = Total * 30;
+		document.form1.NamaAnda.value=NamaAnda;
+		document.form1.Total.value=Total;
+		document.form1.Gaji.value=Gaji;
+		alert("Total " + Total)
+	}
+</script>
+<form name="form1">
+	<h1>Menggunakan Fungsi Bawaan dan Fungsi Buatan</h1>
+	<pre>
+		Masukan		:
+		Nama 		: <input type="text" name="Nama" size="20">
+		Jam Kerja 	: <input type="text" name="JamKer" size="20">
+		Upah/Jam 	: <input type="text" name="Upah" size="20"><hr />
+	</pre>
+	<input type="button" onClick="tekan()" value="Kirim">
+	<input type="reset" value="reset">
+	<pre>
+		Nama 		: <input type="text" size="20" name="NamaAnda">
+		Total Gaji 	: <input type="text" size="20" name="Total">
+		Gaji/Bulan	: <input type="text" size="20" name="Gaji">
+	</pre>
+</form>
+
+</body>
+</html>

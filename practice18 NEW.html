@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> BILL </title>
+</head>
+<body>
+
+<form name="identitas">
+	Nama : <input type="text" name="nama"><br />
+	Tanggal : <input type="text" name="tanggal"><br />
+</form>
+<hr />
+<p id="tambah">
+</p>
+
+<!--
+<p id="tambah">
+	<form name="barang">
+		<input type="text" name="unit">
+	</form>
+</p>
+-->
+
+<input type="button" value="submit" onclick="add()">
+<script>
+	function nama(){
+		var nama = (document.identitas.nama.value);
+		var tanggal = (document.identitas.tanggal.value);
+		document.write("Nama : " +nama);
+		document.write("Tanggal : " +tanggal);
+	}
+
+	function unit(){
+		var i;
+		var unit = (document.data.unit.value);
+		for(i=0; i<unit;i++){
+			document.write("fak" + i);
+			document.write("<br>")
+		}					//	document.write('Masukan Nama Barang : <input type="text" name="u'[i]'"');
+	}
+
+	function add(){
+		var i = 1;
+		document.getElementById("tambah").innerHTML += '<form name="barang"><input type="text" name="unit'+i+'">';
+		i ++;
+	}
+
+
+	var button = document.createElement('button');
+	button.innerHTML = 'click me';
+  	button.onclick = function(){
+    	var i = 1;
+		document.getElementById("tambah").innerHTML += '<form name="barang"><input type="text" name="unit'+i+'">';
+		i ++;
+    
+  	};
+			  // where do we want to have the button to appear?
+			  // you can append it to another element just by doing something like
+			  // document.getElementById('foobutton').appendChild(button);
+ 	document.body.appendChild(button);
+</script>
+
+</body>
+</html>
